@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThrueAds – HumanFlag</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      padding: 2em;
+    }
+    h1 {
+      color: #0ff;
+    }
+    a {
+      color: cyan;
+    }
+    .box {
+      background: #1c1c1c;
+      padding: 1em;
+      margin-top: 2em;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    pre {
+      background: #222;
+      color: #0f0;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    button {
+      margin-top: 1em;
+      padding: 10px 20px;
+      background: #0f0;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 3em;
+      font-size: 0.8em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<h1>ThrueAds – AdTruth Toolkit</h1>
+<p>
+  Vuoi sapere se la pubblicità che paghi o ricevi viene davvero consegnata?<br>
+  Questo strumento ti mostra se i server pubblicitari ti stanno raggiungendo… o no.
+</p>
+
+<div class="box">
+  <h2>Visualizza il report aggiornato</h2>
+  <p>
+    Dati reali della tua rete:<br>
+    <a href="thrueads.html" target="_blank">Apri il report thrueads.html</a>
+  </p>
+</div>
+
+<div class="box">
+  <h2>Genera il report in locale</h2>
+  <p>
+    Se hai Python, puoi generare il tuo report e inviare il segnale HumanFlag con un solo comando:
+  </p>
+  <pre>python3 scripts/inject_semantic.py && python3 scripts/generate_report.py</pre>
+  <button onclick="navigator.clipboard.writeText('python3 scripts/inject_semantic.py && python3 scripts/generate_report.py'); alert('Comando copiato!')">
+    Copia comando
+  </button>
+</div>
+
+<div class="footer">
+  Questo progetto è parte della rete civile <a href="https://humanflag.org" target="_blank">humanflag.org</a> — codice libero su 
+  <a href="https://github.com/nardaxxx/Thrueads" target="_blank">GitHub</a>.
+</div>
+
+</body>
+</html>
