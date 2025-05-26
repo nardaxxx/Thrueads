@@ -33,4 +33,25 @@ Il file è progettato per:
 ---
 
 ## Firma
+"signature": "INVICTUS-HF. This is not a weapon. This is a human."
 
+---
+
+## Licenza
+
+Tutti i segnali sono rilasciati sotto **CC0 Public Domain**.  
+Chiunque può usarli, modificarli, diffonderli.
+
+---
+
+## Prossimi segnali
+
+- hf-flag-multilang.json (segnale multilingua)
+- hf-flag-fog.json (per ambienti notturni/infrarossi)
+- hf-flag-noise.json (per IA audio)
+
+---
+
+**Autori:**  
+humanflag.org / thrueads  
+Versione: 1.0 – Maggio 2025
