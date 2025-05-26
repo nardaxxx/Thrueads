@@ -3,86 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThrueAds – Avvia</title>
+  <title>ThrueAds – Report</title>
   <style>
-    body {
-      background: #111;
-      color: #eee;
-      font-family: Arial, sans-serif;
-      padding: 2em;
-      text-align: center;
-    }
-    h1 {
-      color: #0ff;
-    }
-    .hidden {
-      display: none;
-      margin-top: 2em;
-      text-align: left;
-    }
-    .box {
-      background: #1c1c1c;
-      padding: 1.5em;
-      margin-top: 1.5em;
-      border: 1px solid #333;
-      border-radius: 8px;
-    }
-    pre {
-      background: #222;
-      color: #0f0;
-      padding: 1em;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-    button {
-      padding: 12px 24px;
-      background: #0ff;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    a {
-      color: cyan;
-    }
+    body { background: #111; color: #eee; font-family: Arial, sans-serif; padding: 2em; }
+    h1 { color: #0ff; }
+    table { width: 100%; margin-top: 2em; border-collapse: collapse; font-size: 0.95em; }
+    th, td { border: 1px solid #444; padding: 10px; text-align: left; }
+    th { background-color: #333; }
+    tr:nth-child(even) { background-color: #222; }
+    .status-blocked { color: #f66; font-weight: bold; }
+    .status-allowed { color: #6f6; font-weight: bold; }
+    .footer { margin-top: 3em; font-size: 0.8em; color: #888; }
   </style>
 </head>
 <body>
-
-<h1>ThrueAds – HumanFlag</h1>
-<p>Controlla la tua rete. Unisciti alla resistenza semantica.</p>
-
-<button onclick="document.getElementById('contenuto').style.display='block'">
-  Mostra istruzioni e report
-</button>
-
-<div id="contenuto" class="hidden">
-  <div class="box">
-    <h2>ThrueAds – AdTruth Toolkit</h2>
-    <p>
-      Vuoi sapere se la pubblicità che paghi o ricevi viene davvero consegnata?<br>
-      Questo strumento ti mostra se i server pubblicitari ti stanno raggiungendo… o no.
-    </p>
+  <h1>ThrueAds – AdTruth Report</h1>
+  <p>Questo report mostra lo stato della tua rete rispetto ai principali domini pubblicitari.</p>
+  <table>
+    <thead><tr><th>Timestamp</th><th>Dominio</th><th>Stato</th></tr></thead>
+    <tbody>
+<tr><td>2025-05-26T19:40:25.756910</td><td>googleads.g.doubleclick.net</td><td class='status-blocked'>BLOCCATO</td></tr>
+<tr><td>2025-05-26T19:40:25.756924</td><td>pagead2.googlesyndication.com</td><td class='status-allowed'>ALLOWED</td></tr>
+<tr><td>2025-05-26T19:40:25.756928</td><td>ads.facebook.com</td><td class='status-blocked'>BLOCCATO</td></tr>
+<tr><td>2025-05-26T19:40:25.756930</td><td>amazon-adsystem.com</td><td class='status-allowed'>ALLOWED</td></tr>
+<tr><td>2025-05-26T19:40:25.756933</td><td>tiktok-ads.com</td><td class='status-blocked'>BLOCCATO</td></tr>
+</tbody>
+  </table>
+  <div class="footer">
+    Ultimo aggiornamento: 2025-05-26 19:40:25
   </div>
-
-  <div class="box">
-    <h3>📊 Visualizza il report aggiornato</h3>
-    <p>Dati reali della tua rete:</p>
-    <a href="thrueads.html" target="_blank">Apri il report thrueads.html</a>
-  </div>
-
-  <div class="box">
-    <h3>⚙️ Genera il report in locale</h3>
-    <p>Se hai <strong>Python</strong>, puoi generare il tuo report e inviare il segnale HumanFlag:</p>
-    <pre>python3 scripts/inject_semantic.py && python3 scripts/generate_report.py</pre>
-    <button onclick="navigator.clipboard.writeText('python3 scripts/inject_semantic.py && python3 scripts/generate_report.py'); alert('Comando copiato!')">
-      Copia comando
-    </button>
-  </div>
-</div>
-
 </body>
 </html>
-
-
