@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThrueAds – AdTruth Report</title>
+  <title>ThrueAds – HumanFlag</title>
   <style>
     body {
       background-color: #111;
@@ -13,102 +13,71 @@
     }
     h1 {
       color: #0ff;
-      font-size: 2em;
     }
-    p {
-      margin-top: 1em;
-      line-height: 1.5em;
+    a {
+      color: cyan;
     }
-    table {
-      width: 100%;
+    .box {
+      background: #1c1c1c;
+      padding: 1em;
       margin-top: 2em;
-      border-collapse: collapse;
-      font-size: 0.95em;
+      border: 1px solid #333;
+      border-radius: 8px;
     }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: left;
+    pre {
+      background: #222;
+      color: #0f0;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
     }
-    th {
-      background-color: #333;
-    }
-    tr:nth-child(even) {
-      background-color: #222;
+    button {
+      margin-top: 1em;
+      padding: 10px 20px;
+      background: #0f0;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
     }
     .footer {
       margin-top: 3em;
       font-size: 0.8em;
       color: #888;
     }
-    .status-blocked {
-      color: #f66;
-      font-weight: bold;
-    }
-    .status-allowed {
-      color: #6f6;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
-  <h1>ThrueAds – AdTruth Report</h1>
+
+<h1>ThrueAds – AdTruth Toolkit</h1>
+<p>
+  Questo strumento controlla se la pubblicità che paghi o ricevi… arriva davvero.<br>
+  È parte del progetto <a href="https://humanflag.org" target="_blank">HumanFlag.org</a>, resistenza civile digitale.
+</p>
+
+<div class="box">
+  <h2>Visualizza il report aggiornato</h2>
   <p>
-    Questo report mostra il risultato del monitoraggio DNS automatico effettuato dal programma <strong>AdTruth</strong>.
-    I dati riportano quali domini pubblicitari sono stati bloccati e quali invece sono stati raggiunti.
+    Il file seguente mostra i dati generati dal tool:<br>
+    <a href="thrueads.html" target="_blank">Apri il report (thrueads.html)</a>
   </p>
+</div>
+
+<div class="box">
+  <h2>Genera il tuo report in locale</h2>
   <p>
-    Questo strumento è parte del progetto <a href="https://www.humanflag.org" target="_blank">humanflag.org</a>,
-    iniziativa civile per la trasparenza digitale e la resistenza informativa.
+    Se hai <strong>Python</strong> installato, puoi generare un report reale del traffico pubblicitario.<br>
+    Questo comando invia il segnale semantico e aggiorna la pagina con i dati della tua rete:
   </p>
+  <pre>python3 inject_semantic.py && python3 generate_report.py</pre>
+  <button onclick="navigator.clipboard.writeText('python3 inject_semantic.py && python3 generate_report.py'); alert('Comando copiato!')">
+    Copia il comando
+  </button>
+</div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Timestamp</th>
-        <th>Dominio</th>
-        <th>Stato</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025-05-25T22:00:49</td>
-        <td>googleads.g.doubleclick.net</td>
-        <td class="status-blocked">BLOCCATO</td>
-      </tr>
-      <tr>
-        <td>2025-05-25T22:00:49</td>
-        <td>pagead2.googlesyndication.com</td>
-        <td class="status-allowed">ALLOWED</td>
-      </tr>
+<div class="footer">
+  Questo progetto è open source. Segui o contribuisci su GitHub: <a href="https://github.com/nardaxxx/Thrueads" target="_blank">nardaxxx/Thrueads</a>
+</div>
 
-      <tr>
-        <td>2025-05-25T22:00:49</td>
-        <td>ads.facebook.com</td>
-        <td class="status-blocked">BLOCCATO</td>
-      </tr>
-      <tr>
-        <td>2025-05-25T22:00:49</td>
-        <td>amazon-adsystem.com</td>
-        <td class="status-allowed">ALLOWED</td>
-      </tr>
-      <tr>
-        <td>2025-05-25T22:00:49</td>
-        <td>tiktok-ads.com</td>
-        <td class="status-blocked">BLOCCATO</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="footer">
-    <p>
-      Questo documento è generato automaticamente. Se desideri contribuire al progetto,
-      visita la <a href="https://github.com/tuonome/thrueads" target="_blank">repo GitHub</a>
-      o contatta il team di HumanFlag.
-    </p>
-    <p>
-      Ultimo aggiornamento: 25 maggio 2025
-    </p>
-  </div>
 </body>
 </html>
