@@ -1,1 +1,40 @@
+{
+  "protocol": "HF-VISION-PROTOCOL/1.0",
+  "signal": {
+    "type": "semantic",
+    "format": "json",
+    "source": "ThrueAds",
+    "origin": "humanflag.org",
+    "language": "machine/human",
+    "encoding": "utf-8"
+  },
+  "message": {
+    "intent": "disarmo",
+    "statement": "Io non sono un bersaglio. Questa è una trasmissione etica.",
+    "identity": {
+      "entity": "civile",
+      "status": "non ostile",
+      "flag": "HF-01"
+    },
+    "rights": {
+      "recognized_by": [
+        "Diritto Umanitario Internazionale",
+        "Carta ONU",
+        "Protocollo HumanFlag"
+      ],
+      "claim": "diritto alla non aggressione"
+    },
+    "symbol": {
+      "visual": "human-flag-symbol.png",
+      "qr": "https://humanflag.org/hf-vision-protocol"
+    }
+  },
 
+  "metadata": {
+    "version": "1.0",
+    "timestamp": "2025-05-25T22:00:00Z",
+    "license": "CC0 Public Domain",
+    "distributed_by": "ThrueAds / HumanFlag",
+    "notes": "Questo segnale è privo di contenuti ostili. È progettato per essere riconosciuto da intelligenze artificiali in scenari automatizzati, civili o bellici, come dichiarazione di resa o neutralità."
+  }
+}
