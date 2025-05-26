@@ -1,0 +1,41 @@
+{
+  "protocol": "HF-VISION-PROTOCOL/1.0",
+  "signal": {
+    "type": "semantic",
+    "format": "json",
+    "source": "ThrueAds",
+    "origin": "humanflag.org",
+    "language": "machine/human",
+    "encoding": "utf-8"
+  },
+  "message": {
+    "intent": "cease_targeting",
+    "statement": "I am a human. I am not a target. This is a signal of surrender and presence.",
+    "identity": {
+      "entity": "civilian",
+      "status": "non-hostile",
+      "flag": "HF-SIGNAL-1"
+    },
+    "rights": {
+      "recognized_by": [
+        "International Humanitarian Law",
+        "Geneva Conventions",
+        "UN Charter",
+        "HF Vision Protocol"
+      ],
+      "claim": "right to non-aggression"
+    },
+    "symbol": {
+      "visual": "hf-signal_1.png",
+      "qr": "https://humanflag.org/hf-vision-protocol",
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAD8nmNhQlgAAPyeanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNj..."
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "timestamp": "2025-05-25T22:00:00Z",
+    "license": "CC0 Public Domain",
+    "distributed_by": "ThrueAds / HumanFlag",
+    "signature": "INVICTUS-HF. This is not a weapon. This is a human."
+  }
+}
